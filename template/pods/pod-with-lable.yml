@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-name
+  lable:
+    lable-key1: lable-value1
+    lable-key2: lable-value2
+    lable-key3: lable-value3
+spec:
+  containers:
+    - name: container-name
+      image: image-from-docker-repo
+      ports:
+        - containerPort: 80
